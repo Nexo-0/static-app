@@ -1,13 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Static Page</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Kunal Petare | Frontend Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Hello World</h1>
-  <p>This is my static page.</p>
+
+<body class="bg-black text-white leading-relaxed">
+
+  <!-- ================= HERO ================= -->
+  <section class="min-h-screen flex items-center justify-center px-6 relative overflow-hidden">
+    <div class="absolute inset-0 bg-[radial-gradient(circle_at_top,#0f766e33,transparent_60%)]"></div>
+
+    <div class="relative z-10 max-w-3xl text-center">
+      <h1 class="text-5xl md:text-6xl font-extrabold tracking-wider
+                 bg-gradient-to-r from-cyan-400 to-purple-500
+                 bg-clip-text text-transparent">
+        Kunal Petare
+      </h1>
+
+      <p class="mt-6 text-gray-300 text-lg">
+        Frontend Developer & UI/UX Designer · Computer Engineering Student  
+        Building clean, real-world web experiences from fundamentals.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#projects"
+           class="px-8 py-3 border border-cyan-400 text-cyan-400
+                  rounded-lg hover:bg-cyan-400 hover:text-black transition">
+          VIEW PROJECTS
+        </a>
+
+        <a href="https://kunalpetare.in" target="_blank"
+           class="px-8 py-3 border border-purple-500 text-purple-400
+                  rounded-lg hover:bg-purple-500 hover:text-black transition">
+          MAIN PORTFOLIO
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="py-24 px-6 bg-white/5">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold text-cyan-400 mb-6">About Me</h2>
+
+      <p class="text-gray-300 mb-4">
+        I’m a Computer Engineering student with a strong focus on frontend development
+        and UI/UX design. I started coding in 7th grade and gradually moved from static
+        pages to building complete, deployable web applications.
+      </p>
+
+      <p class="text-gray-300 mb-4">
+        I prefer understanding systems instead of blindly depending on tools. That’s why
+        I’m comfortable working from Linux terminals, using Git properly, and deploying
+        projects through clean pipelines.
+      </p>
+
+      <p class="text-gray-300">
+        This page itself is an example — fully static, built in CentOS, versioned with Git,
+        and deployed without shortcuts.
+      </p>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="py-24 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-cyan-400 mb-12 text-center">Skills</h2>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Frontend</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li>HTML5 / CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React.js</li>
+            <li>Tailwind CSS</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Tools & Workflow</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li>Git & GitHub</li>
+            <li>Linux / CentOS</li>
+            <li>CLI-based development</li>
+            <li>Debugging & testing</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold mb-4">Design</h3>
+          <ul class="space-y-2 text-gray-300">
+            <li>UI/UX fundamentals</li>
+            <li>Layout & hierarchy</li>
+            <li>Color & typography</li>
+            <li>Component thinking</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="py-24 px-6 bg-white/5">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-cyan-400 mb-12 text-center">Projects</h2>
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <!-- AMAZON CLONE -->
+        <div class="border border-white/10 rounded-xl p-6 hover:border-cyan-400/40 transition">
+          <h3 class="text-xl font-semibold mb-2">Amazon Clone</h3>
+          <p class="text-gray-300 text-sm mb-3">
+            A frontend-focused e-commerce clone replicating real shopping UI,
+            layout consistency, and navigation flow.
+          </p>
+          <p class="text-gray-400 text-xs mb-4">
+            Tech: React, Bootstrap
+          </p>
+
+          <div class="flex gap-3">
+            <a href="https://econ.kunalpetare.in" target="_blank"
+               class="px-4 py-2 border border-purple-500 text-purple-400
+                      rounded hover:bg-purple-500 hover:text-black transition text-sm">
+              Live Demo
+            </a>
+
+            <a href="https://github.com/Nexo-0" target="_blank"
+               class="px-4 py-2 border border-cyan-400 text-cyan-400
+                      rounded hover:bg-cyan-400 hover:text-black transition text-sm">
+              Source Code
+            </a>
+          </div>
+        </div>
+
+        <!-- WEATHER APP -->
+        <div class="border border-white/10 rounded-xl p-6 hover:border-cyan-400/40 transition">
+          <h3 class="text-xl font-semibold mb-2">Weather App</h3>
+          <p class="text-gray-300 text-sm mb-3">
+            Real-time weather dashboard using external APIs, focused on clarity,
+            speed, and usability.
+          </p>
+          <p class="text-gray-400 text-xs mb-4">
+            Tech: JavaScript, API, HTML, CSS
+          </p>
+
+          <div class="flex gap-3">
+            <a href="https://weather.kunalpetare.in" target="_blank"
+               class="px-4 py-2 border border-purple-500 text-purple-400
+                      rounded hover:bg-purple-500 hover:text-black transition text-sm">
+              Live Demo
+            </a>
+
+            <a href="https://github.com/Nexo-0" target="_blank"
+               class="px-4 py-2 border border-cyan-400 text-cyan-400
+                      rounded hover:bg-cyan-400 hover:text-black transition text-sm">
+              Source Code
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="py-10 text-center text-gray-400 text-sm">
+    © 2026 Kunal Petare · Built with clarity, not shortcuts
+  </footer>
+
 </body>
 </html>
 
